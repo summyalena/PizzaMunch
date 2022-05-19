@@ -1,0 +1,158 @@
+.container{
+    padding: 40px;
+    display:flex;
+    background-color: white;
+}
+
+.left{
+     flex:2;
+}
+
+.right{
+    flex:1;
+}
+
+.imgContainer{
+    width:40px;
+    height: 50px;
+}
+
+.table{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.wrapper{
+    width:90%;
+    background-color:rgba(17, 16, 16, 0.867);
+    padding: 10px 40px;
+    margin-top: 5px;
+    color:white;
+    cursor:not-allowed;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.totalTextTitle{
+    margin-right: 10px;
+    font-weight: 200;
+}
+
+.button{
+    padding: 10px;
+    height: 50px;
+    background-color: white;
+    color: teal;
+    font-weight:500;
+
+}
+
+.row:last-child{
+    display:flex;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: space-between;
+    
+}
+
+.done{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.preparing{
+    text-align: center;
+    display: flex;
+    animation: preparing 1s ease-in infinite alternate;
+    flex-direction: column;
+    opacity:0.6;
+}
+
+@keyframes preparing{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.undone{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.2;
+}
+
+.undone .checkedIcon, .preparing .checkedIcon{
+    display:none;
+}
+
+@media screen and (max-width:769px){
+     .container{
+         flex-direction: column;
+         padding: 20px;
+     }
+
+     .table{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .trTitle{
+         display:none;
+     }
+
+     .tr{
+         justify-content: center;
+         display: flex;
+         font-size: 20px;
+         align-items: center;
+         flex-direction: column;
+     }
+     .orderID::before{
+         content: "OrderID: ";
+         font-weight: 600;
+     }
+
+     .name::before{
+        content: "Customer Name: ";
+        font-weight: 600;
+    }
+
+    .address::before{
+        content: "Address: ";
+        font-weight: 600;
+    }
+
+    .total::before{
+        content: "Total: ";
+        font-weight: 600;
+    }
+
+     .row:last-child{
+         flex-direction: column;
+         display: flex;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .undone, .preparing, .done{
+         margin-bottom: 15px;
+     }
+
+     .wrapper{
+         width:100%;
+         text-align: center;
+     }
+     .button{
+        margin-top: 10px;
+     }
+}

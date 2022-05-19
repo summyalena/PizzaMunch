@@ -1,0 +1,73 @@
+.container{
+    height:calc(100vh - 100px);
+    background-color: #222;
+    display: flex;
+}
+
+.item{
+   flex:1;
+   display: flex;
+   position:relative; 
+}
+.text > a{
+    margin:0px 10px;
+}
+
+.item:last-child{
+    flex:2;
+    padding:50px;
+    justify-content: space-between;
+}
+.card{
+    flex:1;
+    padding:0 20px;
+}
+
+.title{
+    font-size:18px;
+    color:#b7903c;
+}
+
+.text{
+    color:lightgray;
+}
+
+.motto{
+    color:rgb(189, 188, 188);
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (max-width:769px){
+    .item:first-child{
+        display:none;
+    }
+    .item:nth-child(2){
+        flex-direction: column;
+
+    }
+    .container{
+        height:auto;
+    }
+    .item{
+        text-align: center;
+    }
+    .title{
+        font-size:30px;
+    }
+
+    .motto{
+       animation:motto 4s ease-in infinite alternate;
+        opacity:0.7;
+  }
+        @keyframes motto {
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+      
+    }
+}

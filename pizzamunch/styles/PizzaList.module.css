@@ -1,0 +1,62 @@
+.container{
+    padding:20px 10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.desc{
+    font-size:20px;
+    color:#444;
+    width:70%;
+    animation: desc 4s ease-out forwards;
+}
+@keyframes desc{
+    from {
+        opacity:0;
+        transform:translateY(3rem);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.pizzaCart{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+
+}
+
+.title{
+    color:black;
+    font-weight:bold;
+}
+
+@media screen and (max-width:769px){
+    .title{
+        text-align: center;
+    }
+
+    .desc{
+        width: 90%;
+        text-align: center;
+        animation: desc 1s ease-out forwards;
+    }
+
+    @keyframes desc{
+        from {
+            opacity:0;
+            transform:translateY(3rem);
+        }
+        to{
+            opacity:1;
+            transform:translateY(0);
+        }
+    }
+
+}

@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: KomikaTitle-Axis
+font link: https://www.fontsquirrel.com/fonts/komika-title
+font author: Fredrick Nader
+font author site: http://pedroreina.net/apostrophiclab/
+
+
+icon designer: Alfredo @ IconsAlfredo.com
+icon designer link: /AlfredoCreates
+        
+
+fontColor: {"hex":"#fffff"}
+bgColor: {"hex":"#d1411e"}
+iconColor: {"hex":"#fffff"}
+
+      
