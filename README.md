@@ -38,4 +38,5 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Snapshot
+![Screenshot 2022-06-30 at 15-51-11 PizzaMunch](https://user-images.githubusercontent.com/95056164/176708514-4edea101-5813-484c-a821-cabdf8beca51.png)
 
